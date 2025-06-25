@@ -36,7 +36,7 @@
       font-size: 12px;
     }
     .hero {
-      background: url('https://i.imgur.com/syNnyRA.jpg') center/cover no-repeat;
+    
       height: 300px;
       display: flex;
       align-items: center;
@@ -164,31 +164,7 @@ strong {
       margin: 0;
       padding:0;
     }
-    /* the button  */
-    /* .btn { 
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: hsl(347, 59%, 67%);
-    border-radius: 30px;
-    cursor: pointer;
-    border: none;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    }
     
-    .btn:hover {
-      background-color: hsl(347, 59%, 57%);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .hero-button {
-       margin-top: 2rem;
-    } */
     footer {
       background: #ffe0ec;
       text-align: center;
