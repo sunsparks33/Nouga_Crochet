@@ -40,25 +40,60 @@ nav a:hover {
   font-size: 12px;
 }
 
+
 .about {
-  padding: 4rem 2rem;
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.about h1 {
-  color: #ff4d6d;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.about p {
-  color: #E47A87;
-  line-height: 1.6;
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-}
+    
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 5px #000;
+    }
+    h1 {
+      font-size: 2.5rem;
+      cursor: pointer;
+      color: #e9a0ba ;
+      user-select: none;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
+      padding: 1.5rem;
+    }
+    #paragraph{
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 20px 0;
+      color: #555;
+      justify-content: center;
+      align-items: center;
+      display: flex; 
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
+      padding: 1.5rem;
+    }
 strong {
-  color: #e03c59;
-}
+      color: #e03c59;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
+      padding:0;
+      user-select: none;
+    }
+      footer {
+      background: #ffe0ec;
+      text-align: center;
+      color: #333;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      margin: 0;
+     
+    }

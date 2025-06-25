@@ -131,16 +131,7 @@
     .cart-modal h2 {
       margin-top: 0;
     }
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.4);
-      display: none;
-      z-index: 999;
-    }
+ 
     #paragraph{
       font-size: 1.1rem;
       line-height: 1.6;
