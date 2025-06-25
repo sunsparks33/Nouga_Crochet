@@ -26,6 +26,28 @@ header {
       color: #333;
       font-weight: 600;
     }
+header nav a:hover {
+      color: #e03c59;
+    }
+    h1 {
+      font-size: 2.5rem;
+      cursor: pointer;
+      color: #e9a0ba ;
+      user-select: none;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
+      padding: 1.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 20px 0;
+      color: #555;
+    }
 /* Container for the contact form */
 .contact-container {
     max-width: 500px;

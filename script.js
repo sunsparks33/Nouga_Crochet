@@ -1,0 +1,81 @@
+const products = [
+      { id: 1, name: "Classic Teddy", price: 19.99, type: "teddy", image: "https://i.imgur.com/3ZQ3ZL5.jpg" },
+      { id: 2, name: "Fluffy Bunny", price: 14.99, type: "bunny", image: "https://i.imgur.com/f3OvK2b.jpg" },
+      { id: 3, name: "Sleepy Teddy", price: 21.50, type: "teddy", image: "https://i.imgur.com/T2OmC0P.jpg" },
+      { id: 4, name: "Spring Bunny", price: 17.25, type: "bunny", image: "https://i.imgur.com/vxExP6L.jpg" },
+      { id: 5, name: "Adventure Teddy", price: 22.00, type: "teddy", image: "https://i.imgur.com/1ZQ3ZL5.jpg" },
+      { id: 6, name: "Cuddle Bunny", price: 15.50, type: "bunny", image: "https://i.imgur.com/2fOvK2b.jpg" },
+      { id: 7, name: "Royal Teddy", price: 25.00, type: "teddy", image: "https://i.imgur.com/3T2OmC0P.jpg" },
+      { id: 8, name: "Magic Bunny", price: 18.75, type: "bunny", image: "https://i.imgur.com/4vxExP6L.jpg" },
+      { id: 9, name: "Vintage Teddy", price: 20.00, type: "teddy", image: "https://i.imgur.com/5ZQ3ZL5.jpg" },
+      { id: 10, name: "Sunny Bunny", price: 16.00, type: "bunny", image: "https://i.imgur.com/6fOvK2b.jpg" }
+    ];
+
+    const cart = [];
+
+    function renderProducts() {
+      const productList = document.getElementById('product-list');
+      productList.innerHTML = '';
+
+      const filter = document.getElementById('filter').value;
+      const sort = document.getElementById('sort').value;
+      const search = document.getElementById('search').value.toLowerCase();
+
+      let filtered = [...products];
+
+      if (filter !== 'all') {
+        filtered = filtered.filter(p => p.type === filter);
+      }
+
+      if (search) {
+        filtered = filtered.filter(p => p.name.toLowerCase().includes(search));
+      }
+
+      if (sort === 'price-asc') {
+        filtered.sort((a, b) => a.price - b.price);
+      } else if (sort === 'price-desc') {
+        filtered.sort((a, b) => b.price - a.price);
+      }
+
+      filtered.forEach(product => {
+        const div = document.createElement('div');
+        div.className = 'product';
+        div.innerHTML = `
+          <img src="${product.image}" alt="${product.name}" />
+          <h3>${product.name}</h3>
+          <p>$${product.price.toFixed(2)}</p>
+          <button class="add-to-cart" onclick="addToCart(${product.id})">Add to Cart</button>
+        `;
+        productList.appendChild(div);
+      });
+    }
+
+    function addToCart(id) {
+      const product = products.find(p => p.id === id);
+      cart.push(product);
+      updateCart();
+    }
+
+    function updateCart() {
+      document.getElementById('cart-count').innerText = cart.length;
+      const cartItems = document.getElementById('cart-items');
+      cartItems.innerHTML = '';
+      let total = 0;
+      cart.forEach(item => {
+        const li = document.createElement('li');
+        li.innerText = `${item.name} - $${item.price.toFixed(2)}`;
+        cartItems.appendChild(li);
+        total += item.price;
+      });
+      document.getElementById('cart-total').innerText = total.toFixed(2);
+    }
+
+    function toggleCart() {
+      const overlay = document.getElementById('overlay');
+      const modal = document.getElementById('cart-modal');
+      const visible = overlay.style.display === 'block';
+      overlay.style.display = visible ? 'none' : 'block';
+      modal.style.display = visible ? 'none' : 'block';
+    }
+
+    renderProducts();

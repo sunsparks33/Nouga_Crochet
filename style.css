@@ -18,6 +18,9 @@
       color: #333;
       font-weight: 600;
     }
+    header nav a:hover {
+      color: #e03c59;
+    }
     .cart-icon {
       position: relative;
       cursor: pointer;
@@ -41,8 +44,19 @@
       color: white;
       text-shadow: 1px 1px 5px #000;
     }
-    .hero h1 {
+    h1 {
       font-size: 2.5rem;
+      cursor: pointer;
+      color: #e9a0ba ;
+      user-select: none;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
+      padding: 1.5rem;
+
     }
     .filter-sort {
       display: flex;
@@ -125,4 +139,42 @@
       background: rgba(0,0,0,0.4);
       display: none;
       z-index: 999;
+    }
+    #paragraph{
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 20px 0;
+      color: #555;
+      justify-content: center;
+      align-items: center;
+      display: flex; 
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
+      padding: 1.5rem;
+    }
+strong {
+      color: #e03c59;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
+      padding:0;
+    }
+    footer {
+      background: #ffe0ec;
+      padding: 1rem 2rem;
+      text-align: center;
+      color: #333;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #e03c59;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
