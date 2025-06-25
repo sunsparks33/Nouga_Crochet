@@ -1,0 +1,64 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fffaf4;
+  margin: 0;
+  color: #333;
+}
+
+header {
+  background: #ffe0ec;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+nav a:hover {
+  color: #e03c59;
+}
+
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-counter {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ff4d6d;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.about {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about h1 {
+  color: #ff4d6d;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  color: #E47A87;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+strong {
+  color: #e03c59;
+}

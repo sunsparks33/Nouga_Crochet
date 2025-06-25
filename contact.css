@@ -1,18 +1,10 @@
-/* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styling */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f8f9fa;
-    color: #222;
-    min-height: 100vh;
-}
-header {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+        header {
       background: #ffe0ec;
       padding: 1rem 2rem;
       display: flex;
@@ -26,106 +18,96 @@ header {
       color: #333;
       font-weight: 600;
     }
-header nav a:hover {
+    header nav a:hover {
       color: #e03c59;
     }
-    h1 {
-      font-size: 2.5rem;
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      padding: 32px 24px;
+      justify-content: center;
+        align-items: center;
+     text-align: center;
+     display:flexbox;   
+    }
+    h2 {
+      color: #e0a1a1;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+    p {
+      color: #bb8c8c;
+      margin-bottom: 24px;
+    }
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+      font-weight: 500;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      background: #fafafa;
+    }
+    form textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    button {
+      background: #ff9def;
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 700;
       cursor: pointer;
-      color: #e9a0ba ;
-      user-select: none;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: rgb(192, 99, 139);
+    }
+    /* .contact-info {
+      margin-top: 32px;
+      color: #444;
+      font-size: 0.98rem;
+    }
+    .contact-info p {
+      color: #222;
+      margin: 8px 0;
+     padding: 1rem;
+
+    }
+    @media (max-width: 700px) {
+      .container {
+        margin: 20px 8px;
+        padding: 20px 8px;
+      }
+    } */
+    strong {
+      color: #e03c59;
+      font-weight: bold;
       justify-content: center;
       align-items: center;
       display: flex;
       flex-direction: column;
       text-align: center;
       margin: 0;
-      padding: 1.5rem;
+      padding:0;
     }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin: 20px 0;
-      color: #555;
+    footer {
+      background: #ffe0ec;
+      padding: 1rem 2rem;
+      text-align: center;
+      color: #333;
+      margin-top: 40px;
+      font-size: 0.9rem;
     }
-/* Container for the contact form */
-.contact-container {
-    max-width: 500px;
-    margin: 60px auto;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    padding: 40px 30px;
-}
-
-/* Heading */
-.contact-container h2 {
-    text-align: center;
-    margin-bottom: 24px;
-    color: #2d2d2d;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-/* Form styling */
-.contact-form label {
-    display: block;
-    margin-bottom: 8px;
-    color: #444;
-    font-weight: 500;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px 14px;
-    margin-bottom: 18px;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-    background: #fafbfc;
-    font-size: 1rem;
-    transition: border 0.2s;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #007bff;
-    outline: none;
-}
-
-.contact-form textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 12px;
-    background: #e280a2 ;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.contact-form button:hover {
-    background: #a84165 ;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    .contact-container {
-        padding: 24px 10px;
-    }
-}
-/* Footer styling */
-footer {
-    background: #FFE0EB ;
-    padding: 20px;
-    text-align: center;
-    color: #000000;
-    font-size: 0.9rem;
-}

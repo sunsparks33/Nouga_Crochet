@@ -1,7 +1,7 @@
     body {
-      margin: 0;
       font-family: 'Quicksand', sans-serif;
-      background: #fff8f1;
+      background-color: #fffaf4;
+      margin: 0;
       color: #333;
     }
     header {
@@ -35,28 +35,9 @@
       padding: 2px 6px;
       font-size: 12px;
     }
-    .hero {
-      background: url('https://i.imgur.com/syNnyRA.jpg') center/cover no-repeat;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 1px 1px 5px #000;
-    }
     h1 {
-      font-size: 2.5rem;
-      cursor: pointer;
-      color: #e9a0ba ;
-      user-select: none;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
       text-align: center;
-      margin: 0;
-      padding: 1.5rem;
-
+      color: #ff4d6d;
     }
     .filter-sort {
       display: flex;
@@ -73,73 +54,47 @@
     }
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 2rem;
       padding: 2rem;
     }
     .product {
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       padding: 1rem;
       text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
     }
-    .product:hover {
+      .product:hover {
       transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 16px rgb(27, 26, 26);
     }
     .product img {
-      width: 100%;
+      max-width: 100%;
+      border-radius: 8px;
       height: 180px;
       object-fit: cover;
-      border-radius: 8px;
     }
     .product h3 {
       margin: 0.5rem 0 0.25rem;
     }
     .product p {
-      font-size: 0.9rem;
       color: #666;
+      font-size: 0.9rem;
     }
-    .add-to-cart {
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
-      background: #ff4d6d;
-      color: white;
+    .btn {
+      background-color: #ff4d6d;
       border: none;
+      color: white;
+      padding: 0.5rem 1rem;
       border-radius: 20px;
       cursor: pointer;
-      transition: background 0.3s;
+      margin-top: 0.5rem;
     }
-    .add-to-cart:hover {
-      background: #e03c59;
+    .btn:hover {
+      background-color: #e03c59;
     }
-    .cart-modal {
-      position: fixed;
-      top: 20%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      display: none;
-      z-index: 1000;
-    }
-    .cart-modal h2 {
-      margin-top: 0;
-    }
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.4);
-      display: none;
-      z-index: 999;
-    }
-    strong {
-      color: #e03c59;
+    strong
+    {
+      color: #ff4d6d;
     }
